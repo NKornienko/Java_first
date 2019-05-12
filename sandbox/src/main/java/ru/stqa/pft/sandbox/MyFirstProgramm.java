@@ -8,12 +8,11 @@ public class MyFirstProgramm {
       hello("user");
       hello("Nady");
 
-      double l = 5;
-      System.out.println("площадь квадрата со стороной " + l + " равна " + area(l));
+      Square s = new Square(5.7);
+      System.out.println("площадь квадрата со стороной " + s.l + " равна " + s.area());
 
-      double a = 4;
-      double b = 7.3;
-      System.out.println("площадь прямоугольника со сторонами " + a + " b " + b + " = " + area(a, b));
+      Rectangle r = new Rectangle(4,7.3);
+      System.out.println("площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
    }
 
    public static void hello(String somebody) {
@@ -21,14 +20,7 @@ public class MyFirstProgramm {
       System.out.println("Hello," + somebody + "!");
    }
 
-   public static double area(double len) {
 
-      return len * len;
-   }
-
-   public static double area(double a, double b) {
-      return a * b;
-   }
 }
 
 
